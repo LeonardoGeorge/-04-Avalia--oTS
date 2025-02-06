@@ -118,7 +118,7 @@ input[type="radio"] {
 
 /* Efeito ao passar o mouse sobre as labels */
 .nps-rating label:hover {
-    color: #000000;
+    color: #368aa3;
 }
 
 /* Estilo para mostrar a label quando o radio button for selecionado */
@@ -201,6 +201,38 @@ button {
     z-index: -1; /* Garante que a imagem fique atrás de todos os outros elementos */
     
 }
+
+/* Estilo geral da seção */
+.nps-rating {
+display: flex;
+align-items: center;
+margin-top: 20px;
+}
+
+.emoji-item {
+text-align: center;
+font-size: 1.5rem;
+margin: 10px;
+transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.emoji {
+font-size: 2rem;
+display: block;
+transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.emoji-item:hover {
+transform: scale(1.3); /* Aumenta o tamanho */
+color: #ff9900; /* Destaca com cor */
+}
+
+.highlight {
+transform: scale(1.5); /* Destaque adicional */
+color: red; /* Cor do destaque */
+}
+
+
 
 @media (max-width: 600px) {
     #submit-btn {
