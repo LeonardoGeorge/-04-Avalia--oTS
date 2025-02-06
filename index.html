@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 
+    <style>
+        .hover {
+        transform: scale(1.2); /* Exemplo de aumento do tamanho */
+        }
+
+    </style>
+
+
+
 </head>
 <body>
     <main>
@@ -20,96 +29,58 @@
                 <br>
                 para um amigo ou parente?
             </p>
-        </section>
-
-
-
-        <section>
-            <div class="nps-rating">
-               
-               
-                <div class="emoji-item-0">
-                    <label for="rating-0" class="emoji-item-0">
-                        <span class="emoji">😔</span>
-                        Não recomendo
-                    </label>
-                    <input type="radio" id="rating-0" name="nps-rating" value="0">
-                </div>
-
-
-                <div class="emoji-item-1">
-                    <label for="rating-1" class="emoji-item-1">
-                        <span class="emoji">😕</span>
-                        Não sei,
-                        <br> 
-                        recomendo?
-                    </label>
-                    <input type="radio" id="rating-1" name="nps-rating" value="1">
-                </div>
-
-
-                <div class="emoji-item-2">
-                    <label for="rating-2" class="emoji-item-2">
-                        <span class="emoji">🤔</span>
-                        Tô
-                        <br>
-                        pensando
-                    </label>
-                    <input type="radio" id="rating-2" name="nps-rating" value="2">
-                </div>
-            
-
-                <div class="emoji-item-3">
-                    <label for="rating-3" class="emoji-item-3">
-                        <span class="emoji">😊</span>
-                        Recomendo
-                    </label>
-                    <input type="radio" id="rating-3" name="nps-rating" value="3">
-                </div>
-
-
-                <div class="emoji-item-4">
-                    <label for="rating-4" class="emoji-item-4">
-                        <span class="emoji">😄</span>
-                        Super recomendo
-                    </label>
-                    <input type="radio" id="rating-4" name="nps-rating" value="4">
-                </div>
-
-
-
-            </div>
-        </section>
-        
-        
-                
-            
-
-            <div class="feedback-message">
-                <p class="feedback-text">Selecione uma nota para ver o feedback</p>
-            </div>
-
-            <br>
-            <br>
-
-            <textarea id="feedback-input" placeholder="Por que você nos deu essa nota?"></textarea>
-            
-            <div id="anonymous-check">
-                    <input type="checkbox" id="anonymous" name="anonymous">
-                    <label for="anonymous">Avaliar em anonimato</label>
-                    <br> 
-            </div>
-            
-            <div id="button">
-                <button id="submit-btn">Enviar</button>
-            </div>
-            
-            <div class="back">
-                <img src="IMG/istockphoto-1347375453-612x612.jpg" alt="">
+            <div class="button-container">
+                <button class="nps-button">Avaliar Agora</button>
             </div>
         </section>
     </main>
-</body>
-</html>
+
+    <section>
+        <div class="nps-rating">
+            <input type="radio" id="rating-0" name="nps-rating" value="0">
+            <label for="rating-0" class="emoji-item"> 
+                <span class="emoji">😠</span>
+                Muito insatisfeito
+            </label>
+    
+            <input type="radio" id="rating-1" name="nps-rating" value="1">
+            <label for="rating-1" class="emoji-item"> 
+                <span class="emoji">😞</span>
+                Insatisfeito
+            </label>
+    
+            <input type="radio" id="rating-2" name="nps-rating" value="2">
+            <label for="rating-2" class="emoji-item"> 
+                <span class="emoji">😐</span>
+                Neutro
+            </label>
+    
+            <input type="radio" id="rating-3" name="nps-rating" value="3">
+            <label for="rating-3" class="emoji-item"> 
+                <span class="emoji">😊</span>
+                Recomendo
+            </label>
+    
+            <input type="radio" id="rating-4" name="nps-rating" value="4">
+            <label for="rating-4" class="emoji-item"> 
+                <span class="emoji">😁</span>
+                Muito satisfeito
+            </label>
+        </div>                
+    
+        <div class="feedback-message">
+            <p class="feedback-text">Selecione uma nota para ver o feedback</p>
+        </div>
+    
+        <textarea id="feedback-input" placeholder="Por que você nos deu essa nota?"></textarea>
+        
+        <div id="anonymous-check">
+            <input type="checkbox" id="anonymous" name="anonymous">
+            <label for="anonymous">Avaliar em anonimato</label>
+        </div>
+                    
+        <button id="nps-button">Enviar</button>
+    </section>
+    
 
 
