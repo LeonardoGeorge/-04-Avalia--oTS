@@ -1,29 +1,49 @@
-// Seleciona todos os elementos de label que contêm carinhas e texto
-const emojiItems = document.querySelectorAll('.emoji-item');
+let infeliz = document.querySelector('.emoji-item-0');
+let triste = document.querySelector('.emoji-item-1');
+let neutro = document.querySelector('.emoji-item-2');
+let feliz = document.querySelector('.emoji-item-3');
+let satisfeito = document.querySelector('.emoji-item-4');
 
-// Adiciona eventos de destaque
-emojiItems.forEach(item => {
-  item.addEventListener('mouseover', () => {
-    item.classList.add('highlight'); // Adiciona classe de destaque
-  });
+// Função para adicionar o destaque de seleção
+function selecionarRating(ratingGroup) {
+  // Remover a classe 'checked' de todas as opções
+  infeliz.forEach((item) => item.classList.remove('checked'));
+  triste.forEach((item) => item.classList.remove('checked'));
+  neutro.forEach((item) => item.classList.remove('checked'));
+  feliz.forEach((item) => item.classList.remove('checked'));
+  satisfeito.forEach((item) => item.classList.remove('checked'));
 
-  item.addEventListener('mouseout', () => {
-    item.classList.remove('highlight'); // Remove classe de destaque
+  // Adicionar a classe 'checked' à opção clicada
+  ratingGroup.forEach((item) => item.classList.add('checked'));
+}
+
+// Adicionar eventos de clique a cada grupo de rating
+infeliz.forEach((item) => {
+  item.addEventListener('click', function () {
+    selecionarRating(infeliz);
   });
 });
 
+triste.forEach((item) => {
+  item.addEventListener('click', function () {
+    selecionarRating(triste);
+  });
+});
 
-// Seleciona todos os inputs de radio e os labels associados
-const ratings = document.querySelectorAll('input[type="radio"]');
-const labels = document.querySelectorAll('label');
+neutro.forEach((item) => {
+  item.addEventListener('click', function () {
+    selecionarRating(neutro);
+  });
+});
 
-// Adiciona evento de clique para destacar a opção selecionada
-ratings.forEach((rating, index) => {
-    rating.addEventListener('change', () => {
-        // Remove a classe de destaque de todas as opções
-        labels.forEach(label => label.classList.remove('selected'));
-        
-        // Adiciona a classe de destaque à opção selecionada
-        labels[index].classList.add('selected');
-    });
+feliz.forEach((item) => {
+  item.addEventListener('click', function () {
+    selecionarRating(feliz);
+  });
+});
+
+satisfeito.forEach((item) => {
+  item.addEventListener('click', function () {
+    selecionarRating(satisfeito);
+  });
 });
