@@ -243,3 +243,14 @@ color: red; /* Cor do destaque */
         flex-direction: column;
     }
 }
+
+/* Adicionando estilo para quando a opção for selecionada */
+input[type="radio"]:checked + label {
+    width: 130px;
+    height: 130px;
+    background-color: #43e25883; /* Cor de fundo para a opção selecionada */
+    color: white; /* Cor do texto ao ser selecionado */
+    border-radius: 95px; /* Borda arredondada */
+    padding: 5px 10px; /* Um pouco de padding para ajustar o layout */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
