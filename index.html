@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação NPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section class="nps-container">
+            <h1>Avalie nosso atendimento! 😊</h1>
+            <p class="p-container">
+                Qual a probabilidade de você recomendar a 
+                <br>
+                <strong class="brand-name"><i>NebulaTech</i></strong>
+                <br>
+                para um amigo ou parente?
+            </p>
+        </section>
+        <section>
+      
+                 <div class="nps-rating">
+                    <!-- Números de 0 a 10 para a avaliação com emoticons -->
+                    <label for="rating-0">
+                        <span class="emoji">😔</span>
+                        Não recomendo
+                    </label> 
+                    <input type="radio" id="rating-0" name="nps-rating" value="0">
+                
+                    <label for="rating-1">
+                        <span class="emoji">😕</span>
+                        Não sei
+                        <br>
+                        se recomendo
+                    </label>
+                    <input type="radio" id="rating-1" name="nps-rating" value="1">
+                
+                    <label for="rating-5">
+                        <span class="emoji">🤔</span>
+                        Tô
+                        <br>
+                        pensando
+                    </label>
+                    <input type="radio" id="rating-5" name="nps-rating" value="5">
+                
+                    <label for="rating-2">
+                        <span class="emoji">😊</span>
+                        Recomendo
+                    </label>
+                    <input type="radio" id="rating-2" name="nps-rating" value="2">
+                
+                    <label for="rating-10">
+                        <span class="emoji">😄</span>
+                        Super recomendo
+                    </label>
+                    <input type="radio" id="rating-10" name="nps-rating" value="10">
+                </div>
+                
+            
+
+            <div class="feedback-message">
+                <p class="feedback-text">Selecione uma nota para ver o feedback</p>
+            </div>
+
+            <br>
+            <br>
+
+            <textarea id="feedback-input" placeholder="Por que você nos deu essa nota?"></textarea>
+            
+            <div id="anonymous-check">
+                    <input type="checkbox" id="anonymous" name="anonymous">
+                    <label for="anonymous">Avaliar em anonimato</label>
+                    <br> 
+            </div>
+            
+            <div id="button">
+                <button id="submit-btn">Enviar</button>
+            </div>
+            
+            <div class="back">
+                <img src="IMG/istockphoto-1347375453-612x612.jpg" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
