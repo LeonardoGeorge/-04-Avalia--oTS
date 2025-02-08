@@ -1,3 +1,6 @@
+/* #27b6a3 */
+
+
 :root {
     --primary-color: #3498db;
     --text-color: #333;
@@ -18,10 +21,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 800px;
     color: #333;
 
 }
-
 
 
 section {
@@ -220,7 +223,7 @@ h1 {
 
 /* Personalização para a opção "Neutro" */
 .nps-rating label[for="rating-3"] .emoji {
-    color: gray; /* Altere a cor do emoji, se preferir */
+    color: #27b6a3; /* Altere a cor do emoji, se preferir */
 }
 
 .nps-rating .emoji {
@@ -253,8 +256,8 @@ input[type="radio"] {
     text-align: center; /* Centraliza o conteúdo */
     margin-bottom: 20px;
     font-size: 16px;
-    color: #fff;
-    font-weight: 600;
+    color: #3fd8c4;
+    font-weight: 400;
     cursor: pointer;
     transition: color 0.3s ease;
 } 
@@ -272,7 +275,7 @@ input[type="radio"] {
 
 /* Efeito ao passar o mouse sobre as labels */
 .nps-rating label:hover {
-    color: #41ad9f;
+    color: #32887d;
     transform: scale(1.2); /* Aumenta o tamanho em 20% */
 }
 

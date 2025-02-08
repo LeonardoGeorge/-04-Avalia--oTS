@@ -1,11 +1,11 @@
-// Selecionando os ícones
+
 let infeliz = document.querySelector('#emoji-item-0');
 let triste = document.querySelector('#emoji-item-1');
 let neutro = document.querySelector('#emoji-item-2');
 let feliz = document.querySelector('#emoji-item-3');
 let satisfeito = document.querySelector('#emoji-item-4');
 
-// Função para adicionar o destaque de seleção
+
 function selecionarRating(ratingGroup) {
   // Remover a classe 'checked' de todas as opções
   [infeliz, triste, neutro, feliz, satisfeito].forEach(item => item.classList.remove('checked'));
@@ -14,7 +14,7 @@ function selecionarRating(ratingGroup) {
   ratingGroup.classList.add('checked');
 }
 
-// Adicionando eventos de clique a cada ícone
+
 [infeliz, triste, neutro, feliz, satisfeito].forEach(item => {
   item.addEventListener('click', function () {
     selecionarRating(item);
@@ -22,7 +22,7 @@ function selecionarRating(ratingGroup) {
 });
 
 
-// Função para efeito de hover
+
 function adicionarHoverEffect(element) {
   element.addEventListener('mouseover', function () {
     element.classList.add('hover');
